@@ -5,30 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- FontAwesome Icons -->
+  <script defer src="fontawesome-free-5.15.3-web/js/all.js"></script>
+  <!-- Externa CSS -->
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="logo">
+  </header>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main>
+    <section>
+      <h1>We are launching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+      <div>
+        <input type="email" id="email" placeholder="Your email address..." class="btn">
+        <button type="submit" class="btn">Notify Me</button>
+      </div>
+    </section>
+    <div>
+      <img src="images/illustration-dashboard.png" alt="preview" class="responsive">
+    </div>
+    <div>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </main>
 
   <footer>
+    <p>&copy; Copyright Ping. All rights reserved.</p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/vinnaseti">Vinna Setiawan</a>.
     </p>
   </footer>
+  
 </body>
 </html>
