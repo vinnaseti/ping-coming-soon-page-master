@@ -33,7 +33,7 @@ main section span {
 
 
 main section div {
-    width: 80vw;
+    width: 80%;
     margin: 2em auto;
 
     display: flex;
@@ -44,7 +44,7 @@ main section div {
 main section div .btn {
     padding: 1em 3em;
     margin: .5em;
-    max-height: 3em;
+    max-height: 3.5em;
     border: 1px solid hsla(223, 87%, 63%, .3);
     border-radius: 30px;
 }
@@ -53,20 +53,22 @@ main section div .red {
     border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
-main section div input.btn {
+main section div div#form input.btn {
+    width: auto;
     color: rgba(0, 0, 0, 0.5);
 }
 
 #form {
+    width: 100%;
     padding: 0;
     margin: 0;
-    display: table-column;
+    display: flex;
+    flex-direction: column;
 }
 
-main section div p {
-    margin-left: 3rem;
+main section div div p {
+    padding-left: 3rem;
     font-size: x-small;
-    color: red;
     font-style: italic;
     text-align: start;
 
@@ -150,7 +152,7 @@ main div a:hover {
         flex-direction: row;
     }
 
-    main section div input.btn {
+    main section div div#form {
         width: 60%;
     }
 
