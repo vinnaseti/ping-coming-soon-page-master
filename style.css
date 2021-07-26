@@ -13,7 +13,8 @@ body {
 }
 
 header {
-    margin: 2em;
+    margin: 1em;
+    margin-top: 0;
 }
 
 main section h1 {
@@ -35,6 +36,7 @@ main section span {
 main section div {
     width: 80%;
     margin: 2em auto;
+    margin-bottom: 3em;
 
     display: flex;
     flex-direction: column;
@@ -103,7 +105,7 @@ img.responsive {
     margin-bottom: 25vh;
 }
 
-main div a {
+footer div a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -139,7 +141,7 @@ main section div button:hover.btn {
     background-color: hsla(223, 87%, 63%, .7);
 }
 
-main div a:hover {
+footer div a:hover {
     background-color: hsl(223, 87%, 63%);
     color: white;
 }
@@ -162,8 +164,8 @@ main div a:hover {
 
     img.responsive {
         max-width: 50%;
-        height: auto;
-        margin-top: 30px;
-        margin-bottom: 25vh;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
+
 }
