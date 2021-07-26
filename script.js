@@ -7,16 +7,19 @@ let success = document.querySelector('main section div div p.true')
 const regx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
 btn.addEventListener('click', function(e) {
-    if(regx.test(email.value)){
+    if(email.value == ''){
         warning.classList.add('hide');
         success.classList.remove('hide');
         email.classList.remove('red');
         console.log('benar');
-    }else{
+    }else if(!(regx.test(email.value))){
         email.classList.add('red');
         success.classList.add('hide');
         warning.classList.remove('hide');
         console.log('salah');
+    }else {
+        success.classList.add('hide');
+        warning.classList.add('hide');
     }
 })
 
